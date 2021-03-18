@@ -2,7 +2,7 @@ import json
 import time
 
 from .message import Authenticate, Message
-
+from project_chat.client.decor_log_client import log_auth_client, log_msg_client, log_server_code
 
 class Serializer:
     def __init__(self, dumps=json.dumps, loads=json.loads, encoding="utf-8", get_time_fn=time.time):
@@ -29,6 +29,7 @@ class Serializer:
 
             return self.limit_byte(res) # Строка в байтах
 
+    @log_msg_client
     def serializer_message(self, msg):
         if isinstance(msg, Message):
             result_dict = {
@@ -44,12 +45,13 @@ class Serializer:
 
             return self.limit_byte(res) # Строка в байтах
 
+    @log_server_code
     def serializer_code(self, byte_string):
         revc_str = byte_string.decode(self._encoding)
         data = self.loads(revc_str)
 
         return data # словарь сообщения от сервера
-
+    @log_auth_client
     def serializer_code_authenticate(self, byte_string): # код аунтификации
         #print(self.serializer_code)
         return self.serializer_code(byte_string)['response']

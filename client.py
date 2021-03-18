@@ -14,7 +14,8 @@ LIMIT_BYTE = 640
 @click.command()
 @click.option('--add', default='localhost', help='ip')
 @click.option('--port', default=7777, help='port')
-def main(add, port):
+@click.option('--mode', default='read', help='mode')
+def main(add, port, mode):
     with socket(AF_INET, SOCK_STREAM) as s:  # Создать сокет TCP
         s.connect((add, port))
         logger.info("connect socket")
@@ -25,38 +26,33 @@ def main(add, port):
             password = input("Введите пароль: ")
             client.authenticate(password)  # проходим аунтификацию вводим пароль
 
-            try:
-                data = s.recv(LIMIT_BYTE)
-                dict_server = Serializer().serializer_code(data)
-                logger.debug(f'Сообщение от сервера {dict_server}')
-            except BaseException as e:
-                logger.exception(f"Error! {e}")
+            data = s.recv(LIMIT_BYTE)
+            #print('data')
+            dict_server = Serializer().serializer_code(data)
 
             code = Serializer().serializer_code_authenticate(data)
             print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
 
             while code == 200:
                 logger.info(f"connect client {account_name}")
-                msg = input("Введите сообщение: ")
-                to_user = "#room"
-                try:
-                    client.message(msg=msg, to_user=to_user)  # вводим сообщение
-                    logger.debug(f"Сообщение отправлено, пользователем: {account_name}, кому: {to_user}")
-                except BaseException as e:
-                    logger.exception(f"Сообщение не отправлено")
-                data = s.recv(LIMIT_BYTE)
 
-                try:
+                if mode == 'read':
+                    data = s.recv(LIMIT_BYTE)
                     dict_server = Serializer().serializer_code(data)
-                    logger.debug(f'Сообщение от сервера {dict_server}')
-                except BaseException as e:
-                    logger.exception(f"Error! {e}")
 
-                print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
+                    print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
+                elif mode == 'write':
 
-                if msg == 'quit':
-                    logger.info(f"пользователь: {account_name}, вышел")
-                    break
+                    msg = input("Введите сообщение: ")
+                    to_user = "#room"
+
+                    client.message(msg=msg, to_user=to_user)  # вводим сообщение
+                    if msg == 'quit':
+                        logger.info(f"пользователь: {account_name}, вышел")
+                        break
+
+
+
 
 
 if __name__ == '__main__':

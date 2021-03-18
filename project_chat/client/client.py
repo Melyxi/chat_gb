@@ -10,12 +10,12 @@ class Client:
     def authenticate(self, password):
         msg = Authenticate(self._account_name, password)
         data = self._serializer.serialize_authenticate(msg)
-        print(data)
+        #print(data)
         self._client_socket.send(data)
 
 
     def message(self, msg, to_user):
         message = Message(self._account_name, msg, to_user)
         data = self._serializer.serializer_message(message)
-        print(data)
+        #print(data)
         self._client_socket.send(data)
