@@ -14,8 +14,8 @@ LIMIT_BYTE = 640
 @click.command()
 @click.option('--add', default='localhost', help='ip')
 @click.option('--port', default=7777, help='port')
-@click.option('--mode', default='read', help='mode')
-def main(add, port, mode):
+@click.option('--recv/--send', default=True, help='mode')
+def main(add, port, recv):
     with socket(AF_INET, SOCK_STREAM) as s:  # Создать сокет TCP
         s.connect((add, port))
         logger.info("connect socket")
@@ -36,12 +36,12 @@ def main(add, port, mode):
             while code == 200:
                 logger.info(f"connect client {account_name}")
 
-                if mode == 'read':
+                if recv:
                     data = s.recv(LIMIT_BYTE)
                     dict_server = Serializer().serializer_code(data)
 
                     print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
-                elif mode == 'write':
+                else:
 
                     msg = input("Введите сообщение: ")
                     to_user = "#room"
@@ -50,9 +50,6 @@ def main(add, port, mode):
                     if msg == 'quit':
                         logger.info(f"пользователь: {account_name}, вышел")
                         break
-
-
-
 
 
 if __name__ == '__main__':

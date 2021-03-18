@@ -70,8 +70,8 @@ class Process:
             if sock in self.auth_clients:
                 for recv_sock, data in requests.items():
 
-                        # if sock is recv_sock:
-                        #     continue
+                        if sock is recv_sock:
+                            continue
 
                         try:
                             sock.send(data)
