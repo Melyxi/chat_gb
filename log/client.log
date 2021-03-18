@@ -1,0 +1,59 @@
+2021-03-08 23:09:41,304 - INFO -client- connect socket 
+2021-03-08 23:09:42,877 - DEBUG -client- Сообщение от сервера {'response': 402, 'error': "This could be 'wrong password' or 'no account with that name'"} 
+2021-03-08 23:09:44,197 - DEBUG -client- Сообщение от сервера {'response': 402, 'error': "This could be 'wrong password' or 'no account with that name'"} 
+2021-03-08 23:09:45,597 - DEBUG -client- Сообщение от сервера {'response': 402, 'error': "This could be 'wrong password' or 'no account with that name'"} 
+2021-03-08 23:09:46,933 - DEBUG -client- Сообщение от сервера {'response': 402, 'error': "This could be 'wrong password' or 'no account with that name'"} 
+2021-03-08 23:12:15,881 - INFO -client- connect socket 
+2021-03-08 23:12:20,972 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Пользователь авторизован'} 
+2021-03-08 23:12:20,972 - INFO -client- connect client igor 
+2021-03-08 23:12:22,067 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:12:22,067 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:12:22,067 - INFO -client- connect client igor 
+2021-03-08 23:12:22,884 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:12:22,884 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:12:22,884 - INFO -client- connect client igor 
+2021-03-08 23:12:23,875 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:12:23,875 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:12:23,876 - INFO -client- connect client igor 
+2021-03-08 23:14:11,357 - INFO -client- connect socket 
+2021-03-08 23:14:15,812 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Пользователь авторизован'} 
+2021-03-08 23:14:15,812 - INFO -client- connect client igor 
+2021-03-08 23:14:16,747 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:14:16,747 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:14:16,748 - INFO -client- connect client igor 
+2021-03-08 23:14:17,450 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:14:17,451 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:14:17,451 - INFO -client- connect client igor 
+2021-03-08 23:14:18,298 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:14:18,299 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:14:18,299 - INFO -client- connect client igor 
+2021-03-08 23:15:11,038 - INFO -client- connect socket 
+2021-03-08 23:15:14,540 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Пользователь авторизован'} 
+2021-03-08 23:15:14,540 - INFO -client- connect client igor 
+2021-03-08 23:15:16,283 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:15:16,284 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:15:16,285 - INFO -client- connect client igor 
+2021-03-08 23:15:17,275 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:15:17,276 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:15:17,276 - INFO -client- connect client igor 
+2021-03-08 23:15:18,123 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:15:18,124 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:15:18,124 - INFO -client- connect client igor 
+2021-03-08 23:15:18,794 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:15:18,795 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:15:18,795 - INFO -client- connect client igor 
+2021-03-08 23:16:45,623 - INFO -client- connect socket 
+2021-03-08 23:16:50,019 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Пользователь авторизован'} 
+2021-03-08 23:16:50,019 - INFO -client- connect client igor 
+2021-03-08 23:16:50,867 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:16:50,868 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:16:50,868 - INFO -client- connect client igor 
+2021-03-08 23:16:51,298 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:16:51,299 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:16:51,299 - INFO -client- connect client igor 
+2021-03-08 23:16:51,482 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:16:51,483 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:16:51,484 - INFO -client- connect client igor 
+2021-03-08 23:16:51,642 - DEBUG -client- Сообщение отправлено, пользователем: igor, кому: #room 
+2021-03-08 23:16:51,643 - DEBUG -client- Сообщение от сервера {'response': 200, 'alert': 'Сообщение принято'} 
+2021-03-08 23:16:51,643 - INFO -client- connect client igor 
