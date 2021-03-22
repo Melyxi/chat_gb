@@ -7,15 +7,40 @@ from project_chat.client.serializer import Serializer
 from project_chat.client.client import Client
 import project_chat.client.client_log_config
 import logging
+import threading
 
 logger = logging.getLogger('client')
+
+
+
+def recv_massage(client):
+    s = client._client_socket.sock
+
+    data = s.recv(LIMIT_BYTE)
+    dict_server = Serializer().serializer_code(data)
+    print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
+
+
+def send_massage(client):
+    time.sleep(0.2)
+    account_name = client.account_name
+    msg = input("Введите сообщение: ")
+    to_user = "#room"
+
+    client.message(msg=msg, to_user=to_user)  # вводим сообщение
+    if msg == 'quit':
+
+        logger.info(f"пользователь: {account_name}, вышел")
+
+
+
 
 LIMIT_BYTE = 640
 @click.command()
 @click.option('--add', default='localhost', help='ip')
 @click.option('--port', default=7777, help='port')
-@click.option('--recv/--send', default=True, help='mode')
-def main(add, port, recv):
+#@click.option('--recv/--send', default=True, help='mode')
+def main(add, port):
     with socket(AF_INET, SOCK_STREAM) as s:  # Создать сокет TCP
         s.connect((add, port))
         logger.info("connect socket")
@@ -33,23 +58,32 @@ def main(add, port, recv):
             code = Serializer().serializer_code_authenticate(data)
             print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
 
+
+
             while code == 200:
                 logger.info(f"connect client {account_name}")
+                # Запускает клиентский процесс приёма сообщений
+                #print('** Запуск потока \'thread-1\' для приёма сообщений **')
 
-                if recv:
-                    data = s.recv(LIMIT_BYTE)
-                    dict_server = Serializer().serializer_code(data)
+                receiver = threading.Thread(target=recv_massage, args=(client,))
+                receiver.daemon = True
+                receiver.start()
 
-                    print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
-                else:
+                # Запускает отправку сообщений и взаимодействие с клиентом
+                #print('** Запуск потока \'thread-2\' для отправки сообщений **')
+                user_interface = threading.Thread(target=send_massage, args=(client, ))
+                user_interface.daemon = True
+                user_interface.start()
+                while True:
+                    time.sleep(1)
+                    if receiver.is_alive() and user_interface.is_alive():
+                        continue
+                    break
 
-                    msg = input("Введите сообщение: ")
-                    to_user = "#room"
 
-                    client.message(msg=msg, to_user=to_user)  # вводим сообщение
-                    if msg == 'quit':
-                        logger.info(f"пользователь: {account_name}, вышел")
-                        break
+
+
+
 
 
 if __name__ == '__main__':

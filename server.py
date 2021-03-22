@@ -29,7 +29,7 @@ class Process:
         self.auth_clients = []
 
     def disconnect_client(self, sock, all_clients):
-        print(f"Клиент‚ {sock.fileno()} {sock.getpeername()} подключился")
+        print(f"Клиент‚ {sock.fileno()} {sock.getpeername()} отключился")
         sock.close()
         all_clients.remove(sock)
 
@@ -52,7 +52,7 @@ class Process:
                     #msg = recv_message["message"].encode('utf-8')
                     #print(msg)
 
-                    responses[sock] = Serializer().serializer_server_message(data)  # + msg #байты
+                    responses[sock] = Serializer().serializer_server_message(data)  #байты
 
                     if recv_message['action'] == 'msg':
                         if recv_message['message'] == 'quit':
@@ -70,8 +70,11 @@ class Process:
             if sock in self.auth_clients:
                 for recv_sock, data in requests.items():
 
+
                         if sock is recv_sock:
-                            continue
+                            recv = Serializer().serializer_client(data)
+                            if 'action' in recv and recv['action'] == "authenticate":
+                                sock.send(data)
 
                         try:
                             sock.send(data)
