@@ -15,7 +15,7 @@ import selectors
 import errno
 import logging
 import socket
-
+from project_chat.server.server import FeedData
 logger = logging.getLogger('server')
 import select
 
@@ -57,36 +57,50 @@ class Process:
                     if recv_message['action'] == 'msg':
                         if recv_message['message'] == 'quit':
                             self.disconnect_client(sock, all_clients)
-
-
+                # feed_data = FeedData(data)
+                #
+                # byte_str = feed_data.analysis_data()
+                #
+                # responses[sock] = byte_str
+                #
+                # print(feed_data.auth_user())
+                # if feed_data.auth_user():
+                #     print(self.auth_clients)
+                #     self.auth_clients.append(sock)
 
             except:
                 self.disconnect_client(sock, all_clients)
+
         return responses
+
+
 
     def write_responses(self, requests, w_clients, all_clients):
 
-        for sock in w_clients: # сокет после нескольких неудачных попыток авторизации и после удачно засыпает
+        for sock in w_clients:
             if sock in self.auth_clients:
+
                 for recv_sock, data in requests.items():
 
+                    if sock is recv_sock:
+                        print('++++')
+                        recv = Serializer().serializer_client(data)
 
-                        if sock is recv_sock:
-                            recv = Serializer().serializer_client(data)
-                            if 'action' in recv and recv['action'] == "authenticate":
-                                sock.send(data)
-
-                        try:
+                        if 'action' in recv and recv['action'] == "authenticate":
+                            print(recv)
                             sock.send(data)
-                            print(json.loads(data.decode("utf-8")))
+
+                    try:
+                        sock.send(data)
+                        print(json.loads(data.decode("utf-8")))
 
 
-                        except:
-                            self.disconnect_client(sock, all_clients)
+                    except:
+                        self.disconnect_client(sock, all_clients)
             else:
                 if sock in requests:
                     data = requests[sock]
-                    #print('noaut')
+                    # print('noaut')
                     sock.send(data)
 
 
@@ -94,6 +108,7 @@ class Process:
 @click.option('--a', default='', help='ip')
 @click.option('--p', default=7777, help='port')
 def main(a, p):
+
     with socket.socket(AF_INET, SOCK_STREAM) as s:  # Создает сокет TCP
         s.bind((a, p))  # Присваивает порт 8800
         s.listen(5)  # одновременно обслуживает не более
