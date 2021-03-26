@@ -45,10 +45,3 @@ class FeedData(Serializer):
         if code == '200':
             return True
 
-
-
-
-if __name__ == '__main__':
-    f = FeedData(b'{"code":"eewrewrew"}')
-    t = f.analysis_data()
-    print(t)

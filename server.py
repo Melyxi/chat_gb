@@ -40,18 +40,14 @@ class Process:
             try:
                 data = sock.recv(640)
 
-
+                # новый код
                 feed_data = FeedData(data)
-
                 byte_str = feed_data.analysis_data()
-
                 responses[sock] = byte_str
 
-                print(feed_data.auth_user())
                 if feed_data.auth_user():
-                    print(self.auth_clients)
                     self.auth_clients.append(sock)
-
+                # новый код
             except:
                 self.disconnect_client(sock, all_clients)
 

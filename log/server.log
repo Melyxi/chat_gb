@@ -156,3 +156,29 @@
 2021-03-26 21:46:55,862 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
 2021-03-26 21:46:55,864 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
 2021-03-26 21:46:55,866 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:24,199 - INFO - server - connect server 
+2021-03-26 21:53:24,199 - DEBUG - server - Клиент подключился 
+2021-03-26 21:53:27,676 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:27,678 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:33,922 - INFO - server - connect server 
+2021-03-26 21:53:33,922 - DEBUG - server - Клиент подключился 
+2021-03-26 21:53:36,800 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:36,805 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:40,479 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:40,481 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:40,483 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:42,108 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:42,110 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:42,113 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:45,783 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:45,786 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:45,789 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:46,806 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:46,809 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:46,812 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:48,644 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:48,652 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:48,658 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:53:51,711 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
+2021-03-26 21:53:51,713 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
+2021-03-26 21:53:51,716 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
