@@ -40,33 +40,17 @@ class Process:
             try:
                 data = sock.recv(640)
 
-                recv_message = Serializer().serializer_client(data)  # сообщение от клиента в json
 
-                if 'action' in recv_message and recv_message['action'] == "authenticate":
-                    responses[sock] = Serializer().serializer_answer_auth(data)  # байты
-                    if Serializer().serialize_server_authenticate_code(data) == '200':
-                        self.auth_clients.append(sock)
+                feed_data = FeedData(data)
 
-                else:
+                byte_str = feed_data.analysis_data()
 
-                    #msg = recv_message["message"].encode('utf-8')
-                    #print(msg)
+                responses[sock] = byte_str
 
-                    responses[sock] = Serializer().serializer_server_message(data)  #байты
-
-                    if recv_message['action'] == 'msg':
-                        if recv_message['message'] == 'quit':
-                            self.disconnect_client(sock, all_clients)
-                # feed_data = FeedData(data)
-                #
-                # byte_str = feed_data.analysis_data()
-                #
-                # responses[sock] = byte_str
-                #
-                # print(feed_data.auth_user())
-                # if feed_data.auth_user():
-                #     print(self.auth_clients)
-                #     self.auth_clients.append(sock)
+                print(feed_data.auth_user())
+                if feed_data.auth_user():
+                    print(self.auth_clients)
+                    self.auth_clients.append(sock)
 
             except:
                 self.disconnect_client(sock, all_clients)
@@ -79,22 +63,16 @@ class Process:
 
         for sock in w_clients:
             if sock in self.auth_clients:
-
                 for recv_sock, data in requests.items():
-
                     if sock is recv_sock:
-                        print('++++')
                         recv = Serializer().serializer_client(data)
-
                         if 'action' in recv and recv['action'] == "authenticate":
-                            print(recv)
                             sock.send(data)
+                        continue
 
                     try:
                         sock.send(data)
                         print(json.loads(data.decode("utf-8")))
-
-
                     except:
                         self.disconnect_client(sock, all_clients)
             else:

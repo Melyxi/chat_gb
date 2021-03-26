@@ -78,7 +78,7 @@ def main(add, port):
 
                 # Запускает отправку сообщений и взаимодействие с клиентом
                 #print('** Запуск потока \'thread-2\' для отправки сообщений **')
-                user_interface = threading.Thread(target=recv_msg, args=(client, ))
+                user_interface = threading.Thread(target=send_massage, args=(client, ))
                 user_interface.daemon = True
                 user_interface.start()
                 
