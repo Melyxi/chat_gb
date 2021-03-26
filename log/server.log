@@ -93,3 +93,11 @@
 2021-03-26 21:30:23,677 - DEBUG - server - Клиент подключился 
 2021-03-26 21:30:27,545 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
 2021-03-26 21:30:27,548 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:36:30,943 - INFO - server - connect server 
+2021-03-26 21:36:30,943 - DEBUG - server - Клиент подключился 
+2021-03-26 21:36:33,817 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции read_requests 
+2021-03-26 21:36:33,820 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-03-26 21:36:37,746 - INFO - server - connect server 
+2021-03-26 21:36:37,746 - DEBUG - server - Клиент подключился 
+2021-03-26 21:36:41,611 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции read_requests 
+2021-03-26 21:36:41,615 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
