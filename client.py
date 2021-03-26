@@ -13,15 +13,21 @@ logger = logging.getLogger('client')
 
 
 
-def recv_massage(client):
+def recv_msg(client):
+
     s = client._client_socket.sock
 
     data = s.recv(LIMIT_BYTE)
     dict_server = Serializer().serializer_code(data)
-    print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
+    print(f"Сообщение от сервера: {dict_server} длиной {len(data)} байт")
+    #print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
+
+
+
 
 
 def send_massage(client):
+
     time.sleep(0.2)
     account_name = client.account_name
     msg = input("Введите сообщение: ")
@@ -31,6 +37,7 @@ def send_massage(client):
     if msg == 'quit':
 
         logger.info(f"пользователь: {account_name}, вышел")
+
 
 
 
@@ -65,15 +72,16 @@ def main(add, port):
                 # Запускает клиентский процесс приёма сообщений
                 #print('** Запуск потока \'thread-1\' для приёма сообщений **')
 
-                receiver = threading.Thread(target=recv_massage, args=(client,))
+                receiver = threading.Thread(target=recv_msg, args=(client,))
                 receiver.daemon = True
                 receiver.start()
 
                 # Запускает отправку сообщений и взаимодействие с клиентом
                 #print('** Запуск потока \'thread-2\' для отправки сообщений **')
-                user_interface = threading.Thread(target=send_massage, args=(client, ))
+                user_interface = threading.Thread(target=recv_msg, args=(client, ))
                 user_interface.daemon = True
                 user_interface.start()
+                
                 while True:
                     time.sleep(1)
                     if receiver.is_alive() and user_interface.is_alive():
