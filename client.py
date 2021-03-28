@@ -49,6 +49,7 @@ LIMIT_BYTE = 640
 #@click.option('--recv/--send', default=True, help='mode')
 def main(add, port):
     with socket(AF_INET, SOCK_STREAM) as s:  # Создать сокет TCP
+        #print('+-+-+-+')
         s.connect((add, port))
         logger.info("connect socket")
         client_sock = ClientSocket(s)

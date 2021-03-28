@@ -3,6 +3,7 @@ import selectors
 from .serializer import Serializer
 import json
 
+"""
 class Server:
     def __init__(self, client_socket, serializer):
         self._client_socket = client_socket
@@ -21,7 +22,7 @@ class Server:
 
     def read(self):
         pass
-
+"""
 
 
 class FeedData(Serializer):
