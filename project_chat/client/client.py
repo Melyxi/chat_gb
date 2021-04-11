@@ -19,3 +19,19 @@ class Client:
         data = self._serializer.serializer_message(message)
         #print(data)
         self._client_socket.send(data)
+
+    def add_contact(self, login):
+
+        data = self._serializer.serializer_add_contacts(login, self.account_name)
+        self._client_socket.send(data)
+
+    def del_contact(self, login):
+
+        data = self._serializer.serializer_del_contacts(login, self.account_name)
+        self._client_socket.send(data)
+
+    def get_contacts(self):
+
+        data = self._serializer.serializer_get_contacts(self.account_name)
+        self._client_socket.send(data)
+

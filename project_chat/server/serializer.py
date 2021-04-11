@@ -65,7 +65,7 @@ class Serializer:
                 return self.limit_byte(res)  # байты
             else:
 
-                data = {"response": 200, "alert": "Сообщение принято", "сообщение": msg}
+                data = {"response": 200, "alert": "Сообщение принято", "сообщение": msg , "action": "message"}
                 result_str = self._dumps(data)
                 res = result_str.encode(self.encoding)
 
@@ -80,6 +80,75 @@ class Serializer:
             res = result_str.encode(self.encoding)
 
             return self.limit_byte(res)  # байты
+
+
+    def serializer_server_add_client_correctly(self):
+        data = {"response": "200", "message": "клиент добавлен", "action": "add_client"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+
+    def serializer_server_add_client_warning(self):
+        data = {"response": '404', "message": "ошибка", "action": "add_client"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+    def serializer_server_delete_client_correctly(self):
+        data = {"response": "200", "message": "клиент удален", "action": "del_client"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+
+    def serializer_server_delete_client_warning(self):
+        data = {"response": '404', "message": "ошибка", "action": "del_client"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+    def serializer_server_get_client_correctly(self, list_client):
+        print(list_client)
+        clients = []
+        for item in list_client:
+            clients.append(item[0])
+
+        data = {
+            "response": "202",
+            "alert": clients,
+            "action": "get_clients"
+        }
+
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+    def serializer_server_get_client_warning(self):
+        data = {"response": '404', "message": "ошибка", "action": "get_clients"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+    def serializer_server_auth_correctly(self):
+        data = {"response": 200, "alert": "Пользователь авторизован", "action": "authenticate"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
+
+    def serializer_server_auth_warning(self):
+        data = {"response": 402, "error": "This could be 'wrong password' or 'no account with that name'", "action": "authenticate"}
+        result_str = self._dumps(data)
+        res = result_str.encode(self.encoding)
+
+        return self.limit_byte(res)  # байты
 
 # class SerializerAnswer(Serializer):
 #     def __init__(self, byte_string):

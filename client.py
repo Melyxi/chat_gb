@@ -26,17 +26,28 @@ def recv_msg(client):
 
 
 
-def send_massage(client):
+def send_message(client):
+    action = input("Введите действие: ")
 
-    time.sleep(0.2)
-    account_name = client.account_name
-    msg = input("Введите сообщение: ")
-    to_user = "#room"
+    if action == 'add':
+        cl = input('Введите имя клиента ')
+        client.add_contact(cl)
 
-    client.message(msg=msg, to_user=to_user)  # вводим сообщение
-    if msg == 'quit':
+    elif action == 'del':
+        cl = input('Введите имя клиента ')
+        client.del_contact(cl)
 
-        logger.info(f"пользователь: {account_name}, вышел")
+    elif action == 'get':
+        client.get_contacts()
+    else:
+        account_name = client.account_name
+        msg = input("Введите сообщение: ")
+        to_user = "#room"
+
+        client.message(msg=msg, to_user=to_user)  # вводим сообщение
+        if msg == 'quit':
+
+            logger.info(f"пользователь: {account_name}, вышел")
 
 
 
@@ -54,10 +65,14 @@ def main(add, port):
         logger.info("connect socket")
         client_sock = ClientSocket(s)
         while True:
+
             account_name = input("Введите имя: ")
             client = Client(client_sock, account_name, Serializer())  # передаем сокет, имя, серилизатор
+
+            # проходим аунтификацию
             password = input("Введите пароль: ")
             client.authenticate(password)  # проходим аунтификацию вводим пароль
+
 
             data = s.recv(LIMIT_BYTE)
             #print('data')
@@ -66,9 +81,10 @@ def main(add, port):
             code = Serializer().serializer_code_authenticate(data)
             print('Сообщение от сервера: ', dict_server, ', длиной ', len(data), ' байт')
 
-
-
             while code == 200:
+
+
+
                 logger.info(f"connect client {account_name}")
                 # Запускает клиентский процесс приёма сообщений
                 #print('** Запуск потока \'thread-1\' для приёма сообщений **')
@@ -79,7 +95,7 @@ def main(add, port):
 
                 # Запускает отправку сообщений и взаимодействие с клиентом
                 #print('** Запуск потока \'thread-2\' для отправки сообщений **')
-                user_interface = threading.Thread(target=send_massage, args=(client, ))
+                user_interface = threading.Thread(target=send_message, args=(client, ))
                 user_interface.daemon = True
                 user_interface.start()
                 

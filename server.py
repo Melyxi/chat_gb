@@ -1,12 +1,15 @@
 # server
 
 # Программа сервера времени
+import datetime
 from socket import *
 import time
 import click
 from contextlib import closing
 import json
 import os
+
+from project_chat.server.db import ClientStorage
 from project_chat.server.serializer import Serializer
 from project_chat.server.server_socket import ServerSocket
 #from project_chat.server.server import Server
@@ -79,10 +82,11 @@ class Server:
                 byte_str = feed_data.analysis_data()
                 responses[sock] = byte_str
 
-                if feed_data.auth_user():
+                if feed_data.auth_code:
                     self.auth_clients.append(sock)
 
             except:
+
                 self.disconnect_client(sock, all_clients)
 
         return responses
@@ -96,12 +100,13 @@ class Server:
 
 
                     if sock is recv_sock:
-                        if recv == {'response': 200, 'alert': 'Пользователь авторизован'}:
+                        if recv['action'] != 'message':
                             sock.send(data)
                         continue
 
                     try:
-                        sock.send(data)
+                        if recv['action'] == 'message':
+                            sock.send(data)
                         print(json.loads(data.decode("utf-8")))
                     except:
                         self.disconnect_client(sock, all_clients)
@@ -132,6 +137,15 @@ def main(a, p):
         else:
             logger.debug(f"Клиент подключился")
             print(f"Клиент подключился‚ {addr}")
+
+            print(addr)
+
+            path = os.path.join(os.getcwd(), 'project_chat/server/company.db3')
+            time_at = datetime.datetime.utcfromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+            list_data = {'username_id': 1, 'ip_addr': str(addr), 'time_at': time_at}
+            cliendb = ClientStorage(path)
+            cliendb.add('HistoryClient', list_data)
+
             server.clients.append(client)
         finally:
 

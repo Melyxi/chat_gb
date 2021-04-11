@@ -50,6 +50,30 @@ class HistoryClient:
             cursor.execute(
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
 
+class ListClients:
+    def __init__(self, url_base):
+        self.url_base = url_base
+        self.namemodel = self.__class__.__name__
+        self.id_history = 'id INTEGER primary key'
+        self.username_id = 'username_id INT'
+        self.client_id = 'client_id INT'
+        self.foreign_key1 = 'FOREIGN KEY (username_id) REFERENCES UserModel(id) ON UPDATE CASCADE ON DELETE CASCADE'
+        self.foreign_key = 'FOREIGN KEY (client_id) REFERENCES UserModel(id) ON UPDATE CASCADE ON DELETE CASCADE'
+
+        attr = []
+        for name, value in vars(self).items():
+            if not value == self.url_base:
+                if not value == self.namemodel:
+                    attr.append(value)
+        self.str_atr = ', '.join(attr)
+
+    def migrate(self):
+        with sqlite3.connect(self.url_base) as conn:
+            cursor = conn.cursor()
+            print(f"create table if not exists {self.namemodel} ({self.str_atr});")
+            cursor.execute(
+                f"create table if not exists {self.namemodel} ({self.str_atr});")
+
 
 class ClientStorage:
     def __init__(self, url_base):
@@ -115,14 +139,10 @@ class ClientStorage:
 
         try:
 
-            self.cursor.execute(f"SELECT time_at, ip_addr FROM HistoryClient WHERE UserModel.id=1")
-            results = self.cursor.fetchall()
-            print(results)
             self.cursor.execute(f"SELECT {key_join} FROM {model} WHERE {filter_join}", parameters)
             results = self.cursor.fetchall()
 
-            # print(results)
-            return results
+            return results[0]
         except BaseException as e:
             print('Error: get', e)
         self.conn.close()
@@ -152,10 +172,28 @@ class ClientStorage:
             print('Error: update', e)
         self.conn.close()
 
+    def delete(self, model, where):
+        self.initialization()
+
+        filter_where = []
+        for key, value in where.items():
+            str_filter = key + '=:' + key
+            filter_where.append(str_filter)
+
+        filter_where = ' and '.join(filter_where)
+
+        try:
+            self.cursor.execute(f"DELETE FROM {model} WHERE {filter_where}", where)
+            self.conn.commit()
+        except BaseException as e:
+            print('Error: delete', e)
+
+
     def join(self, models, field=None, where=None):
         self.initialization()
 
         for obj in models:
+
             string = getattr(obj, 'foreign_key', False)
             print(string)
             if string:
@@ -188,8 +226,6 @@ class ClientStorage:
 
             self.cursor.execute(
                 f"SELECT {key_join} FROM {model_ref} INNER JOIN {model_key} ON {model_ref}.{key_ref}={model_key}.{key_id} {where}")
-            results = self.cursor.fetchall()
-            print(results)
 
             results = self.cursor.fetchall()
 
@@ -204,26 +240,49 @@ if __name__ == '__main__':
     user.migrate()
     history = HistoryClient('company.db3')
     history.migrate()
+    list_clients = ListClients('company.db3')
+    list_clients.migrate()
 
     name = 'igor'
     password = '123'
-    list_data = {'username': 'igor1', 'password': '45321'}
+    list_data = {'username': 'kolya', 'password': '45321'}
 
     cliendb = ClientStorage('company.db3')
     cliendb.add('UserModel', list_data)
 
     cliendb.select('UserModel', ['id', 'username', 'password'])
 
-    dict_get = {'id': 1, 'username': 'igor', 'password': '45321'}
+    dict_get = {'username': 'ivanewe'}
 
-    field = ['username', 'password']
+    field = ['id']
+
+
+    get = cliendb.get('UserModel', dict_get, field)
+    print(get[0], 'get_user')
+
     update_set = {'is_active': 1}
-    cliendb.get('UserModel', dict_get, field)
-
     cliendb.update('UserModel', dict_get, update_set)
 
     history_add = {'username_id': 1, 'time_at': '2015-02-25 13:21:49', 'ip_addr': '127.0.0.1'}
 
     f = cliendb.select('UserModel', ['id', 'username', 'password'])
 
-    cliendb.join([user, history], field=['UserModel.username'], where='UserModel.id=2')
+    cliendb.join([user, history], field=['UserModel.username'], where='UserModel.id=1')
+
+    join_db = cliendb.join([user, list_clients], field=['UserModel.username'], where='ListClients.username_id=1')
+
+    db_user_add = cliendb.get('UserModel', {'username': 'igor'}, ['id'])
+    user_add = cliendb.get('UserModel', {'username': 'egor'}, ['id'])
+
+    print(db_user_add)
+    print(user_add)
+
+    print(join_db)
+    for item in join_db:
+        print(item[0])
+
+    cliendb.delete('ListClients', {"username_id": 1, "client_id": 3})
+
+    join_db = cliendb.join([user, list_clients], field=['UserModel.username'],
+                                where=f'ListClients.username_id=2')
+    print(join_db)
