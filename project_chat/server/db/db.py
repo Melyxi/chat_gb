@@ -75,7 +75,7 @@ class ListClients:
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
 
 
-class ClientStorage:
+class ObjRelMap:
     def __init__(self, url_base):
         self.url_base = url_base
         self.conn = None
@@ -247,7 +247,7 @@ if __name__ == '__main__':
     password = '123'
     list_data = {'username': 'kolya', 'password': '45321'}
 
-    cliendb = ClientStorage('company.db3')
+    cliendb = ObjRelMap('company.db3')
     cliendb.add('UserModel', list_data)
 
     cliendb.select('UserModel', ['id', 'username', 'password'])
