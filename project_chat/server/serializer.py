@@ -10,8 +10,7 @@ class Serializer:
         self._loads = loads
         self._dumps = dumps
         self.encoding = encoding
-        self.path_auth = os.path.join(os.getcwd(), 'project_chat\\server\\db\\auth.json')
-        self.path_code = os.path.join(os.getcwd(), 'project_chat\\server\\db\\code.json')
+
         self._LIMIT_BYTE = 640
         self.code = ' '
 
@@ -20,32 +19,6 @@ class Serializer:
             byte_str += b' '
         return byte_str
 
-    def serialize_server_authenticate_code(self, byte_string):  # проверка аунтификации
-        with open(self.path_auth, encoding=self.encoding) as f:
-            msg = json.load(f)
-        revc_str = byte_string.decode(self.encoding)
-        data = self._loads(revc_str)
-        if 'action' in data and data['action'] == "authenticate":
-            # print('msg', msg)
-            for id in msg:
-                # print(recv_msg)
-                if msg[id]["account_name"] == data['user']["account_name"] and msg[id]["password"] == \
-                        data['user']["password"]:
-                    return '200'
-
-            return '402'
-
-        return '403'
-
-    def serializer_answer_auth(self, byte_string):
-        with open(self.path_code, encoding=self.encoding) as f:
-            msg = json.load(f)
-        code = self.serialize_server_authenticate_code(byte_string)
-        result_str = self._dumps(msg[code])
-        res = result_str.encode(self.encoding)
-
-        # print(self.code, "code")
-        return self.limit_byte(res)  # байты
 
     @log_client
     def serializer_client(self, data):
@@ -74,8 +47,9 @@ class Serializer:
 
 
         else:
-            with open(self.path_code, encoding=self.encoding) as f:
-                msg = json.load(f)
+            # with open(self.path_code, encoding=self.encoding) as f:
+            #     msg = json.load(f)
+            data = {"response": 403, "alert": "Неверное сообщение", "сообщение": msg, "action": "message"}
             result_str = self._dumps(msg['403'])
             res = result_str.encode(self.encoding)
 
