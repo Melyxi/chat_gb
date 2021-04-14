@@ -9,7 +9,7 @@ from contextlib import closing
 import json
 import os
 
-from project_chat.server.db import ClientStorage
+from project_chat.server.db.db import ObjRelMap
 from project_chat.server.serializer import Serializer
 from project_chat.server.server_socket import ServerSocket
 #from project_chat.server.server import Server
@@ -45,11 +45,12 @@ class Port:
 class Server:
     port = Port()
 
-    def __init__(self, addr, port):
+    def __init__(self, addr, port, db_url):
 
         self.addr = addr
         self.port = port
 
+        self.db_url = db_url
         self.clients = []
         self.auth_clients = []
         self.sock = None
@@ -78,7 +79,7 @@ class Server:
             try:
                 data = sock.recv(640)
 
-                feed_data = FeedData(data)
+                feed_data = FeedData(data, self.db_url)
                 byte_str = feed_data.analysis_data()
                 responses[sock] = byte_str
 
@@ -122,9 +123,9 @@ class Server:
 @click.option('--a', default='', help='ip')
 @click.option('--p', default=7777, help='port')
 def main(a, p):
-
+    path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3') # бд
     print(a, p)
-    server = Server(a, p)
+    server = Server(a, p, path)
     server.init_sock()
 
     while True:
@@ -140,10 +141,10 @@ def main(a, p):
 
             print(addr)
 
-            path = os.path.join(os.getcwd(), 'project_chat/server/company.db3')
+            path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3')
             time_at = datetime.datetime.utcfromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
             list_data = {'username_id': 1, 'ip_addr': str(addr), 'time_at': time_at}
-            cliendb = ClientStorage(path)
+            cliendb = ObjRelMap(path)
             cliendb.add('HistoryClient', list_data)
 
             server.clients.append(client)
