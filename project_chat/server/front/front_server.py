@@ -24,19 +24,18 @@ class MyWindow(QMainWindow):
         uic.loadUi('server_gui.ui', self)
 
 
-class Mytabl(MyWindow, QTableWidget):
-    def __init__(self):
-        MyWindow.__init__(self)
-        #QTableWidget.__init__(self)
+
 
 
 
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    #window = MyWindow()
-    w = Mytabl()
-    w.show()
+    window = MyWindow()
+
+
+
+    window.show()
     #window.show()
     sys.exit(app.exec_())
 
