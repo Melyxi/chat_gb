@@ -16,15 +16,17 @@ def setup_plugin_path():
 
 
 class MainWindow(QtWidgets.QMainWindow):
-    def __init__(self):
+    def __init__(self, iu):
         super().__init__()
+
+        self._iu = iu
         ui_file_path = Path(__file__).parent.absolute() / "client.ui"
         uic.loadUi(ui_file_path, self)
         self.log = None
         self.pas = None
         self.dict_data = None
         self.flag_btn = False
-        self.btn = self.pushLogin.clicked.connect(lambda: self.push_data)
+        btn = self.pushLogin.clicked.connect(lambda: self.push_data)
         self.Password.setEchoMode(QLineEdit.Password)
         self.Login.textChanged.connect(self.on_text_login)
         self.Password.textChanged.connect(self.on_text_password)
@@ -33,12 +35,12 @@ class MainWindow(QtWidgets.QMainWindow):
     def on_text_login(self):
         self.log = self.Login.text()
         #print(self.log)
-        return self.Login.text()
+        self.Login.text()
 
     def on_text_password(self):
         self.pas = self.Password.text()
         #print(self.pas)
-        return self.Password.text()
+        self.Password.text()
 
     def push_data(self):
         self.flag_btn = True
@@ -48,7 +50,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def event(self, e):
 
-        if e.type() == QtCore.QEvent.KeyPress:
+        if e.type() == QtCore.QEvent.btn:
             print("Нажата клавиша на клавиатуре")
             print("Код:", e.key(), ", текст:", self.push_data())
         elif e.type() == QtCore.QEvent.Close:
@@ -75,23 +77,6 @@ class DisconnectedFromServerEvent(QtCore.QEvent):
 
 
 
-
-class MyWindow(QtWidgets.QWidget):
-    def __init__(self, parent=None):
-        QtWidgets.QWidget.__init__(self, parent)
-        self.resize(300, 100)
-
-    def event(self, e):
-        if e.type() == QtCore.QEvent.KeyPress:
-            print("Нажата клавиша на клавиатуре")
-            print("Код:", e.key(), ", текст:", e.text())
-        elif e.type() == QtCore.QEvent.Close:
-            print("Окно закрыто")
-        elif e.type() == QtCore.QEvent.MouseButtonPress:
-            print("Клик мышью. Координаты:", e.x(), e.y())
-
-        # Событие отправляется дальше
-        return super().event(e)
 
 
 class EventHandler(QtCore.QObject):
@@ -130,9 +115,12 @@ def mainloop(mw, app, handler):
 if __name__ == "__main__":
     setup_plugin_path()
 
+
     app = QtWidgets.QApplication(sys.argv)
     handler = EventHandler()
-    mw = MainWindow()
+    iu = UiNotifier(app, handler)
+
+    mw = MainWindow(iu)
     mw.show()
 
     thr = threading.Thread(target=mainloop, args=(mw, app, handler))

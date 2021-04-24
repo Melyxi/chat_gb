@@ -1,0 +1,122 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<ui version="4.0">
+<class>Form</class>
+<widget class="QWidget" name="Form">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>414</width>
+<height>407</height>
+</rect>
+</property>
+<property name="windowTitle">
+<string>Connect to server</string>
+</property>
+<layout class="QGridLayout" name="gridLayout">
+<item row="3" column="0">
+<widget class="QLabel" name="label_2">
+<property name="text">
+<string>Password</string>
+</property>
+</widget>
+</item>
+<item row="3" column="1" colspan="2">
+<widget class="QLineEdit" name="passwordLineEdit">
+<property name="echoMode">
+<enum>QLineEdit::Password</enum>
+</property>
+<property name="placeholderText">
+<string>Enter your password</string>
+</property>
+</widget>
+</item>
+<item row="5" column="2">
+<widget class="QPushButton" name="connectButton">
+<property name="text">
+<string>Connect</string>
+</property>
+</widget>
+</item>
+<item row="1" column="1">
+<widget class="QLineEdit" name="addressLineEdit">
+<property name="text">
+<string>localhost</string>
+</property>
+</widget>
+</item>
+<item row="2" column="0">
+<widget class="QLabel" name="label">
+<property name="text">
+<string>Login</string>
+</property>
+</widget>
+</item>
+<item row="5" column="0" colspan="2">
+<spacer name="horizontalSpacer">
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+<property name="sizeHint" stdset="0">
+<size>
+<width>307</width>
+<height>20</height>
+</size>
+</property>
+</spacer>
+</item>
+<item row="1" column="0">
+<widget class="QLabel" name="label_3">
+<property name="text">
+<string>Address</string>
+</property>
+</widget>
+</item>
+<item row="1" column="2">
+<widget class="QSpinBox" name="portSpinBox">
+<property name="minimum">
+<number>1000</number>
+</property>
+<property name="maximum">
+<number>65635</number>
+</property>
+</widget>
+</item>
+<item row="0" column="1">
+<spacer name="verticalSpacer">
+<property name="orientation">
+<enum>Qt::Vertical</enum>
+</property>
+<property name="sizeHint" stdset="0">
+<size>
+<width>20</width>
+<height>40</height>
+</size>
+</property>
+</spacer>
+</item>
+<item row="2" column="1" colspan="2">
+<widget class="QLineEdit" name="loginLineEdit">
+<property name="placeholderText">
+<string>Enter your username</string>
+</property>
+</widget>
+</item>
+<item row="4" column="1">
+<spacer name="verticalSpacer_2">
+<property name="orientation">
+<enum>Qt::Vertical</enum>
+</property>
+<property name="sizeHint" stdset="0">
+<size>
+<width>20</width>
+<height>40</height>
+</size>
+</property>
+</spacer>
+</item>
+</layout>
+</widget>
+<resources/>
+<connections/>
+</ui>
