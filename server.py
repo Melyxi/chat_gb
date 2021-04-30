@@ -78,12 +78,15 @@ class Server:
         for sock in r_clients:
             try:
                 data = sock.recv(640)
+                print(data)
 
                 feed_data = FeedData(data, self.db_url)
                 byte_str = feed_data.analysis_data()
                 responses[sock] = byte_str
 
                 if feed_data.auth_code:
+
+
                     self.auth_clients.append(sock)
 
             except:

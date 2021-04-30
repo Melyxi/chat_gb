@@ -1,538 +1,376 @@
-2021-04-10 19:58:49,301 - INFO - server - connect server 
-2021-04-10 19:58:49,302 - DEBUG - server - Клиент подключился 
-2021-04-10 19:59:23,149 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 19:59:23,152 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 19:59:23,363 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:12:58,098 - INFO - server - connect server 
-2021-04-10 20:12:58,098 - DEBUG - server - Клиент подключился 
-2021-04-10 20:13:16,448 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:13:16,451 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:13:19,503 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:15:21,166 - INFO - server - connect server 
-2021-04-10 20:15:21,166 - DEBUG - server - Клиент подключился 
-2021-04-10 20:15:33,368 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:15:44,016 - INFO - server - connect server 
-2021-04-10 20:15:44,016 - DEBUG - server - Клиент подключился 
-2021-04-10 20:15:53,817 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:24:57,673 - INFO - server - connect server 
-2021-04-10 20:24:57,673 - DEBUG - server - Клиент подключился 
-2021-04-10 20:27:03,403 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:27:03,409 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:28:32,676 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:28:37,396 - INFO - server - connect server 
-2021-04-10 20:28:37,396 - DEBUG - server - Клиент подключился 
-2021-04-10 20:28:48,592 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:28:50,830 - INFO - server - connect server 
-2021-04-10 20:28:50,830 - DEBUG - server - Клиент подключился 
-2021-04-10 20:29:08,524 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:29:08,526 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:29:10,790 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:30:41,156 - INFO - server - connect server 
-2021-04-10 20:30:41,156 - DEBUG - server - Клиент подключился 
-2021-04-10 20:31:07,491 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:31:07,495 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:31:38,493 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:35:20,192 - INFO - server - connect server 
-2021-04-10 20:35:20,192 - DEBUG - server - Клиент подключился 
-2021-04-10 20:35:32,552 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:35:32,555 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:35:33,979 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:36:33,933 - INFO - server - connect server 
-2021-04-10 20:36:33,933 - DEBUG - server - Клиент подключился 
-2021-04-10 20:36:50,777 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:36:50,780 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:36:52,623 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:38:13,406 - INFO - server - connect server 
-2021-04-10 20:38:13,406 - DEBUG - server - Клиент подключился 
-2021-04-10 20:39:52,627 - INFO - server - connect server 
-2021-04-10 20:39:52,627 - DEBUG - server - Клиент подключился 
-2021-04-10 20:40:12,160 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:40:12,163 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:40:47,792 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:41:37,990 - INFO - server - connect server 
-2021-04-10 20:41:37,990 - DEBUG - server - Клиент подключился 
-2021-04-10 20:41:50,019 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:41:50,024 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:41:51,259 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:42:21,918 - INFO - server - connect server 
-2021-04-10 20:42:21,918 - DEBUG - server - Клиент подключился 
-2021-04-10 20:42:37,347 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:42:37,351 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:42:38,681 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:43:32,822 - INFO - server - connect server 
-2021-04-10 20:43:32,822 - DEBUG - server - Клиент подключился 
-2021-04-10 20:43:45,223 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 20:43:45,232 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 20:43:47,163 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:02:27,139 - INFO - server - connect server 
-2021-04-10 21:02:27,139 - DEBUG - server - Клиент подключился 
-2021-04-10 21:02:45,668 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:02:45,672 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 21:29:19,315 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:29:21,377 - INFO - server - connect server 
-2021-04-10 21:29:21,377 - DEBUG - server - Клиент подключился 
-2021-04-10 21:29:38,473 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:29:38,484 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 21:29:42,635 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:41:26,751 - INFO - server - connect server 
-2021-04-10 21:41:26,751 - DEBUG - server - Клиент подключился 
-2021-04-10 21:41:36,527 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:41:36,530 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 21:41:37,348 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:41:40,135 - INFO - server - connect server 
-2021-04-10 21:41:40,135 - DEBUG - server - Клиент подключился 
-2021-04-10 21:41:59,274 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:41:59,276 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 21:42:19,464 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:42:21,941 - INFO - server - connect server 
-2021-04-10 21:42:21,941 - DEBUG - server - Клиент подключился 
-2021-04-10 21:42:28,854 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:43:51,346 - INFO - server - connect server 
-2021-04-10 21:43:51,347 - DEBUG - server - Клиент подключился 
-2021-04-10 21:44:00,057 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:44:21,662 - INFO - server - connect server 
-2021-04-10 21:44:21,662 - DEBUG - server - Клиент подключился 
-2021-04-10 21:44:41,410 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:44:52,577 - INFO - server - connect server 
-2021-04-10 21:44:52,578 - DEBUG - server - Клиент подключился 
-2021-04-10 21:45:00,915 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:45:37,823 - INFO - server - connect server 
-2021-04-10 21:45:37,823 - DEBUG - server - Клиент подключился 
-2021-04-10 21:46:06,047 - INFO - server - connect server 
-2021-04-10 21:46:06,047 - DEBUG - server - Клиент подключился 
-2021-04-10 21:46:17,689 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:46:36,547 - INFO - server - connect server 
-2021-04-10 21:46:36,547 - DEBUG - server - Клиент подключился 
-2021-04-10 21:46:45,491 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:51:08,375 - INFO - server - connect server 
-2021-04-10 21:51:08,375 - DEBUG - server - Клиент подключился 
-2021-04-10 21:51:16,535 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 21:52:47,809 - INFO - server - connect server 
-2021-04-10 21:52:47,809 - DEBUG - server - Клиент подключился 
-2021-04-10 21:52:55,339 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:13:41,175 - INFO - server - connect server 
-2021-04-10 22:13:41,175 - DEBUG - server - Клиент подключился 
-2021-04-10 22:13:47,713 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:14:57,489 - INFO - server - connect server 
-2021-04-10 22:14:57,489 - DEBUG - server - Клиент подключился 
-2021-04-10 22:15:04,574 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:15:54,256 - INFO - server - connect server 
-2021-04-10 22:15:54,257 - DEBUG - server - Клиент подключился 
-2021-04-10 22:15:59,962 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:16:47,358 - INFO - server - connect server 
-2021-04-10 22:16:47,358 - DEBUG - server - Клиент подключился 
-2021-04-10 22:16:55,308 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:17:34,982 - INFO - server - connect server 
-2021-04-10 22:17:34,982 - DEBUG - server - Клиент подключился 
-2021-04-10 22:17:52,281 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:17:52,283 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции analysis_data 
-2021-04-10 22:17:54,003 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:20:49,318 - INFO - server - connect server 
-2021-04-10 22:20:49,318 - DEBUG - server - Клиент подключился 
-2021-04-10 22:20:57,341 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:56:46,289 - INFO - server - connect server 
-2021-04-10 22:56:46,289 - DEBUG - server - Клиент подключился 
-2021-04-10 22:57:05,241 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:57:40,595 - INFO - server - connect server 
-2021-04-10 22:57:40,595 - DEBUG - server - Клиент подключился 
-2021-04-10 22:58:11,491 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 22:58:59,867 - INFO - server - connect server 
-2021-04-10 22:58:59,867 - DEBUG - server - Клиент подключился 
-2021-04-10 22:59:05,206 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:01:17,402 - INFO - server - connect server 
-2021-04-10 23:01:17,402 - DEBUG - server - Клиент подключился 
-2021-04-10 23:01:27,948 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:02:53,787 - INFO - server - connect server 
-2021-04-10 23:02:53,787 - DEBUG - server - Клиент подключился 
-2021-04-10 23:02:59,302 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:03:52,400 - INFO - server - connect server 
-2021-04-10 23:03:52,400 - DEBUG - server - Клиент подключился 
-2021-04-10 23:04:10,897 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:04:19,433 - INFO - server - connect server 
-2021-04-10 23:04:19,433 - DEBUG - server - Клиент подключился 
-2021-04-10 23:04:27,776 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:06:01,575 - INFO - server - connect server 
-2021-04-10 23:06:01,575 - DEBUG - server - Клиент подключился 
-2021-04-10 23:06:10,958 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:06:12,479 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:07:36,958 - INFO - server - connect server 
-2021-04-10 23:07:36,958 - DEBUG - server - Клиент подключился 
-2021-04-10 23:07:43,561 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:18:44,784 - INFO - server - connect server 
-2021-04-10 23:18:44,784 - DEBUG - server - Клиент подключился 
-2021-04-10 23:18:50,318 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:21:14,761 - INFO - server - connect server 
-2021-04-10 23:21:14,761 - DEBUG - server - Клиент подключился 
-2021-04-10 23:21:27,391 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:21:34,185 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:22:59,215 - INFO - server - connect server 
-2021-04-10 23:22:59,215 - DEBUG - server - Клиент подключился 
-2021-04-10 23:23:05,528 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:26:28,997 - INFO - server - connect server 
-2021-04-10 23:26:28,997 - DEBUG - server - Клиент подключился 
-2021-04-10 23:26:36,134 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:27:12,941 - INFO - server - connect server 
-2021-04-10 23:27:12,941 - DEBUG - server - Клиент подключился 
-2021-04-10 23:27:17,662 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:27:18,891 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:30:42,198 - INFO - server - connect server 
-2021-04-10 23:30:42,198 - DEBUG - server - Клиент подключился 
-2021-04-10 23:30:47,514 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-10 23:30:50,158 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:29:54,719 - INFO - server - connect server 
-2021-04-11 11:29:54,719 - DEBUG - server - Клиент подключился 
-2021-04-11 11:29:58,779 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:29:59,863 - INFO - server - connect server 
-2021-04-11 11:29:59,863 - DEBUG - server - Клиент подключился 
-2021-04-11 11:30:05,176 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:30:47,764 - INFO - server - connect server 
-2021-04-11 11:30:47,764 - DEBUG - server - Клиент подключился 
-2021-04-11 11:30:55,060 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:32:41,433 - INFO - server - connect server 
-2021-04-11 11:32:41,433 - DEBUG - server - Клиент подключился 
-2021-04-11 11:32:46,561 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:32:47,793 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:43:32,289 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:43:34,342 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:43:43,347 - INFO - server - connect server 
-2021-04-11 11:43:43,347 - DEBUG - server - Клиент подключился 
-2021-04-11 11:43:57,362 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:43:58,641 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:44:12,657 - INFO - server - connect server 
-2021-04-11 11:44:12,657 - DEBUG - server - Клиент подключился 
-2021-04-11 11:44:21,652 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:44:22,550 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:44:28,235 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:48:36,253 - INFO - server - connect server 
-2021-04-11 11:48:36,253 - DEBUG - server - Клиент подключился 
-2021-04-11 11:48:44,608 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:48:45,624 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:48:49,696 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:48:52,949 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:49:06,563 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:49:19,955 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:49:21,993 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:49:21,996 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 11:49:30,722 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:49:30,728 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 11:52:20,151 - INFO - server - connect server 
-2021-04-11 11:52:20,151 - DEBUG - server - Клиент подключился 
-2021-04-11 11:52:24,638 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:52:24,641 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 11:52:55,090 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:52:55,091 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 11:53:08,478 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:53:08,505 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 11:53:08,507 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 11:53:11,797 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 11:53:11,799 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 11:53:11,801 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 12:11:18,830 - INFO - server - connect server 
-2021-04-11 12:11:18,830 - DEBUG - server - Клиент подключился 
-2021-04-11 12:11:24,743 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:13:09,709 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:13:09,712 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:13:16,195 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:13:16,197 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:13:18,551 - INFO - server - connect server 
-2021-04-11 12:13:18,551 - DEBUG - server - Клиент подключился 
-2021-04-11 12:13:23,815 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:13:35,165 - INFO - server - connect server 
-2021-04-11 12:13:35,165 - DEBUG - server - Клиент подключился 
-2021-04-11 12:13:38,269 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:14:36,508 - INFO - server - connect server 
-2021-04-11 12:14:36,508 - DEBUG - server - Клиент подключился 
-2021-04-11 12:14:39,786 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:14:57,094 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:15:06,226 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:15:15,991 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:15:15,994 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:15:18,852 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:15:18,854 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:15:24,147 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:15:24,149 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:19:06,902 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:06,904 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:19:08,327 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:08,329 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 12:19:21,963 - INFO - server - connect server 
-2021-04-11 12:19:21,963 - DEBUG - server - Клиент подключился 
-2021-04-11 12:19:27,248 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:30,105 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:31,939 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:44,105 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:19:53,842 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:22:01,261 - INFO - server - connect server 
-2021-04-11 12:22:01,261 - DEBUG - server - Клиент подключился 
-2021-04-11 12:22:08,371 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:22:15,257 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:24:32,428 - INFO - server - connect server 
-2021-04-11 12:24:32,429 - DEBUG - server - Клиент подключился 
-2021-04-11 12:24:39,358 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:25:40,482 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:25:57,042 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:26:01,769 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:26:51,406 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:27:00,485 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:27:04,985 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:27:16,837 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:27:21,028 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:42:02,603 - INFO - server - connect server 
-2021-04-11 12:42:02,603 - DEBUG - server - Клиент подключился 
-2021-04-11 12:42:10,973 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:42:40,394 - INFO - server - connect server 
-2021-04-11 12:42:40,394 - DEBUG - server - Клиент подключился 
-2021-04-11 12:42:46,723 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:51:14,920 - INFO - server - connect server 
-2021-04-11 12:51:14,920 - DEBUG - server - Клиент подключился 
-2021-04-11 12:51:25,729 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 12:51:25,732 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 12:51:35,897 - INFO - server - connect server 
-2021-04-11 12:51:35,897 - DEBUG - server - Клиент подключился 
-2021-04-11 12:51:38,155 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:19,200 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:19,202 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:22,853 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:22,854 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:22,856 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:25,105 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:25,107 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:25,109 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:26,533 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:26,535 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:26,537 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:28,175 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:28,178 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:28,181 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:29,601 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:29,603 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:29,606 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:34,341 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:34,342 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:03:34,344 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:03:37,414 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:03:37,418 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:30:54,806 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:30:54,809 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:30:54,811 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:30:59,495 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:30:59,504 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:30:59,512 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:43:39,921 - INFO - server - connect server 
-2021-04-11 13:43:39,921 - DEBUG - server - Клиент подключился 
-2021-04-11 13:43:47,698 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:43:47,701 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:43:53,795 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:43:53,806 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:20,854 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:20,943 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:27,278 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:27,281 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:34,408 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:34,485 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:39,170 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:39,176 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:47,289 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:47,292 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:44:47,294 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:48,938 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:48,948 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:44:48,955 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 13:44:50,787 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 13:44:50,789 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 13:44:50,791 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:03:12,079 - INFO - server - connect server 
-2021-04-11 14:03:12,079 - DEBUG - server - Клиент подключился 
-2021-04-11 14:03:23,455 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:03:23,554 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:04:20,477 - INFO - server - connect server 
-2021-04-11 14:04:20,477 - DEBUG - server - Клиент подключился 
-2021-04-11 14:04:25,956 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:04:26,067 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:04:33,832 - INFO - server - connect server 
-2021-04-11 14:04:33,832 - DEBUG - server - Клиент подключился 
-2021-04-11 14:04:40,919 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:04:41,025 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:18:44,763 - INFO - server - connect server 
-2021-04-11 14:18:44,763 - DEBUG - server - Клиент подключился 
-2021-04-11 14:24:25,671 - INFO - server - connect server 
-2021-04-11 14:24:25,671 - DEBUG - server - Клиент подключился 
-2021-04-11 14:24:36,909 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:24:36,912 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:31:09,986 - INFO - server - connect server 
-2021-04-11 14:31:09,986 - DEBUG - server - Клиент подключился 
-2021-04-11 14:31:14,138 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:31:51,091 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:31:52,082 - INFO - server - connect server 
-2021-04-11 14:31:52,082 - DEBUG - server - Клиент подключился 
-2021-04-11 14:32:58,346 - INFO - server - connect server 
-2021-04-11 14:32:58,346 - DEBUG - server - Клиент подключился 
-2021-04-11 14:35:17,507 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:35:43,683 - INFO - server - connect server 
-2021-04-11 14:35:43,683 - DEBUG - server - Клиент подключился 
-2021-04-11 14:35:53,284 - INFO - server - connect server 
-2021-04-11 14:35:53,285 - DEBUG - server - Клиент подключился 
-2021-04-11 14:36:01,129 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:36:01,132 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:36:20,028 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:36:20,121 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:36:20,127 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:37:00,618 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:37:00,623 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:37:00,625 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:39,151 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:46:39,153 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:46:39,155 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:39,157 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:41,586 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:46:41,588 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:46:41,590 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:41,592 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:45,263 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:46:45,265 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:46:45,267 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:46:45,269 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:04,337 - INFO - server - connect server 
-2021-04-11 14:53:04,338 - DEBUG - server - Клиент подключился 
-2021-04-11 14:53:07,026 - INFO - server - connect server 
-2021-04-11 14:53:07,026 - DEBUG - server - Клиент подключился 
-2021-04-11 14:53:13,860 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:53:13,863 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:23,208 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:53:23,211 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:23,213 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:29,320 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:53:29,323 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:29,325 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:53:59,667 - INFO - server - connect server 
-2021-04-11 14:53:59,667 - DEBUG - server - Клиент подключился 
-2021-04-11 14:54:05,254 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:05,257 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:11,418 - INFO - server - connect server 
-2021-04-11 14:54:11,418 - DEBUG - server - Клиент подключился 
-2021-04-11 14:54:21,245 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:21,251 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:21,253 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:25,521 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:25,525 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:25,527 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:33,047 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:33,049 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:54:33,051 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:33,052 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:35,880 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:35,883 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:54:35,884 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:35,886 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:51,740 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:51,742 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:54:51,743 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:51,745 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:53,981 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 14:54:53,983 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 14:54:53,984 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 14:54:53,986 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:06,599 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 15:07:06,601 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 15:07:06,602 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:06,604 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:08,665 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 15:07:08,668 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 15:07:08,670 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:08,671 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:14,350 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 15:07:14,354 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:14,356 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:21,863 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 15:07:21,867 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 15:07:21,869 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 16:48:36,273 - INFO - server - connect server 
-2021-04-11 16:48:36,273 - DEBUG - server - Клиент подключился 
-2021-04-11 16:48:40,233 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:48:52,844 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:49:14,168 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:51:16,633 - INFO - server - connect server 
-2021-04-11 16:51:16,633 - DEBUG - server - Клиент подключился 
-2021-04-11 16:51:23,863 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:51:53,431 - INFO - server - connect server 
-2021-04-11 16:51:53,431 - DEBUG - server - Клиент подключился 
-2021-04-11 16:52:00,038 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:52:47,631 - INFO - server - connect server 
-2021-04-11 16:52:47,631 - DEBUG - server - Клиент подключился 
-2021-04-11 16:52:52,443 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:55:00,348 - INFO - server - connect server 
-2021-04-11 16:55:00,349 - DEBUG - server - Клиент подключился 
-2021-04-11 16:55:04,554 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 16:55:34,950 - INFO - server - connect server 
-2021-04-11 16:55:34,950 - DEBUG - server - Клиент подключился 
-2021-04-11 16:55:39,770 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:03:24,327 - INFO - server - connect server 
-2021-04-11 17:03:24,327 - DEBUG - server - Клиент подключился 
-2021-04-11 17:03:29,951 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:04:22,525 - INFO - server - connect server 
-2021-04-11 17:04:22,526 - DEBUG - server - Клиент подключился 
-2021-04-11 17:04:28,318 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:05:46,101 - INFO - server - connect server 
-2021-04-11 17:05:46,101 - DEBUG - server - Клиент подключился 
-2021-04-11 17:05:51,350 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:07:56,112 - INFO - server - connect server 
-2021-04-11 17:07:56,112 - DEBUG - server - Клиент подключился 
-2021-04-11 17:08:01,322 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:01,328 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 17:08:06,231 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:06,238 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 17:08:14,180 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:14,277 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 17:08:19,407 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:19,410 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 17:08:27,975 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:28,076 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 17:08:30,909 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 17:08:30,918 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 19:52:28,946 - INFO - server - connect server 
-2021-04-11 19:52:28,946 - DEBUG - server - Клиент подключился 
-2021-04-11 19:52:33,733 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 19:53:17,678 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 19:53:40,952 - INFO - server - connect server 
-2021-04-11 19:53:40,952 - DEBUG - server - Клиент подключился 
-2021-04-11 19:53:45,784 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 19:53:45,787 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 19:53:49,299 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 19:53:49,301 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 19:53:49,303 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 19:53:51,554 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 19:53:51,556 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 19:53:51,557 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:09:52,813 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:09:52,816 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 20:09:52,818 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:09:54,461 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:09:54,463 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 20:09:54,465 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:10:08,099 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:10:08,101 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции serializer_server_message 
-2021-04-11 20:10:08,103 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:10:12,369 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:10:47,585 - INFO - server - connect server 
-2021-04-11 20:10:47,585 - DEBUG - server - Клиент подключился 
-2021-04-11 20:10:53,346 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:10:53,349 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:11:01,079 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:11:01,083 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:11:07,408 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:13:48,033 - INFO - server - connect server 
-2021-04-11 20:13:48,033 - DEBUG - server - Клиент подключился 
-2021-04-11 20:13:54,249 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:13:54,252 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:14:00,975 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:14:55,224 - INFO - server - connect server 
-2021-04-11 20:14:55,224 - DEBUG - server - Клиент подключился 
-2021-04-11 20:15:02,223 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:15:02,226 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:15:06,476 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:15:37,743 - INFO - server - connect server 
-2021-04-11 20:15:37,743 - DEBUG - server - Клиент подключился 
-2021-04-11 20:15:42,568 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:15:42,570 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
-2021-04-11 20:15:46,043 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
-2021-04-11 20:15:46,054 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:38,122 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:38,126 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:38,337 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:38,341 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:38,557 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:38,560 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:38,782 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:38,785 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:38,994 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:39,000 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:39,220 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:39,232 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:39,447 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:39,450 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:39,670 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:39,673 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:39,885 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:39,889 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:40,104 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:40,107 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:40,319 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:40,322 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:40,535 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:40,537 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:40,754 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:40,757 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:40,973 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:40,977 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:41,193 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:41,196 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:41,412 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:41,415 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:41,631 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:41,635 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:41,850 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:41,854 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:42,070 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:42,074 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:42,286 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:42,289 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:42,504 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:42,507 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:42,724 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:42,727 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:42,943 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:42,946 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:43,165 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:43,173 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:43,385 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:43,394 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:43,618 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:43,629 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:43,846 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:43,850 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:44,066 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:44,069 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:44,288 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:44,299 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:44,518 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:44,524 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:44,737 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:44,741 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:44,952 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:44,957 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:45,172 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:45,175 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:45,398 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:45,412 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:45,629 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:45,644 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:45,856 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:45,859 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:46,075 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:46,078 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:46,295 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:46,298 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:46,514 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:46,592 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:46,806 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:46,810 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:47,028 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:47,031 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:47,245 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:47,247 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:47,462 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:47,465 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:47,676 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:47,685 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:47,888 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:47,893 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:48,107 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:48,110 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:48,322 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:48,325 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:48,545 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:48,558 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:48,769 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:48,773 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:48,985 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:48,988 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:49,206 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:49,209 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:49,424 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:49,436 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:49,660 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:49,670 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:49,889 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:49,893 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:50,105 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:50,108 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:50,325 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:50,339 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:50,551 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:50,554 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:50,767 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:50,771 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:50,988 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:50,991 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:51,215 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:51,218 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:51,425 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:51,428 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:51,644 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:51,647 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:51,866 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:51,878 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:52,098 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:52,101 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:52,310 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:52,316 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:52,529 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:52,532 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:52,740 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:52,743 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:52,958 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:52,964 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:53,181 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:53,184 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:53,399 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:53,413 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:53,633 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:53,642 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:53,847 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:53,855 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:54,066 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:54,069 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:54,288 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:54,301 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:54,515 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:54,518 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:54,734 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:54,738 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:54,956 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:54,969 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:55,191 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:55,200 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:55,420 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:55,423 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:55,642 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:55,653 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:55,868 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:55,871 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:56,080 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:56,084 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:56,298 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:56,301 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:56,521 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:56,524 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:56,735 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:56,738 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:56,953 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:56,956 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:57,172 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:57,174 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:57,390 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:57,395 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:57,613 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:57,625 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:57,839 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:57,842 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:58,054 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:58,057 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:58,259 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:58,262 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:58,477 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:58,480 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:58,698 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:58,701 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:58,916 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:58,918 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:59,130 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:59,133 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:59,346 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:59,349 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:59,563 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:59,566 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:59,786 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:11:59,789 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:11:59,999 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:00,002 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:00,219 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:00,222 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:00,436 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:00,440 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:00,658 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:00,661 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:00,872 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:00,875 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:01,095 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:01,109 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:01,330 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:01,344 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:01,566 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:01,580 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:01,794 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:01,798 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:02,014 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:02,026 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:02,248 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:02,256 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:02,461 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:02,465 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:02,678 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:02,681 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:02,895 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:02,899 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:03,118 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:03,121 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:03,336 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:03,340 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:03,558 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:03,571 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:03,785 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:03,791 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:04,002 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:04,006 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:04,218 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:04,222 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:04,435 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:04,438 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:04,656 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:04,659 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:04,877 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:04,881 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:05,091 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:05,094 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:05,309 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:05,312 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:05,526 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:05,529 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:05,746 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:05,750 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:05,967 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:05,970 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:06,183 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:06,186 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:06,402 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:06,406 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:06,617 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:06,620 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:06,835 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:06,838 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:07,058 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:07,061 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:07,275 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:07,287 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:07,508 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:07,511 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:07,724 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:07,729 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:07,944 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:07,949 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:08,161 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:08,165 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:08,381 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:08,384 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:08,593 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:08,596 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:08,817 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:08,831 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:09,048 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:09,057 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:09,269 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:09,282 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:09,498 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:09,501 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:09,714 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:09,718 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:09,927 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:09,930 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:10,132 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:10,135 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:10,358 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:10,371 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:10,595 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:10,598 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:10,808 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:10,811 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:11,026 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:11,029 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:11,251 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:11,261 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:11,466 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:11,469 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:11,692 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:11,706 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:11,920 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:11,923 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:12,138 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:12,141 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:12,364 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:12,375 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:12,582 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:12,585 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:12,801 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:12,804 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:13,018 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:13,021 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:13,238 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:13,241 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:13,443 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:13,447 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:13,667 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:13,680 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:13,900 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:13,907 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:14,119 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:14,132 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:14,341 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:14,423 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:14,636 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:14,639 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:14,850 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:14,853 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:15,070 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:15,073 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:15,289 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:15,302 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:15,520 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:15,523 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:15,741 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:15,753 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:15,970 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:15,973 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:16,191 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:16,193 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:16,403 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:16,407 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:16,629 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:16,643 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:16,859 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:16,862 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:17,076 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:17,079 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:17,293 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:17,296 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:17,518 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:17,530 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:17,748 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:17,751 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:17,959 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:17,961 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:18,176 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:18,179 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:18,396 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:18,401 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:18,614 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:18,617 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:18,830 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:18,833 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:19,048 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:19,051 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:19,267 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:19,271 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 
+2021-04-25 20:12:19,488 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции __init__ 
+2021-04-25 20:12:19,494 - DEBUG - decor_log_server - Сообщение от клиента. вызвана из функции write_responses 

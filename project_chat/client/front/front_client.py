@@ -4,10 +4,14 @@ import threading
 from pathlib import Path
 
 import PyQt5
-from PyQt5.QtWidgets import QLineEdit
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QLineEdit, QTableWidgetItem
 from icecream import ic
 from PyQt5 import QtWidgets, uic
 from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+
 
 def setup_plugin_path():
     plugins_path = Path(PyQt5.__file__).parent.absolute() / "Qt5" / "plugins"
@@ -45,20 +49,21 @@ class MainWindow(QtWidgets.QMainWindow):
     def push_data(self):
         self.flag_btn = True
         self.dict_data = {'login': self.log, 'password': self.pas}
+        print({'login': self.log, 'password': self.pas})
 
         return self.dict_data
 
     def event(self, e):
 
-        if e.type() == QtCore.QEvent.btn:
+        if e.type() == QtCore.QEvent.Close:
             print("Нажата клавиша на клавиатуре")
-            print("Код:", e.key(), ", текст:", self.push_data())
+
         elif e.type() == QtCore.QEvent.Close:
             print("Окно закрыто")
         elif e.type() == QtCore.QEvent.MouseButtonPress:
             print("Клик мышью. Координаты:", e.x(), e.y())
 
-        print(super().event(e))
+
         # Событие отправляется дальше
         return super().event(e)
 
@@ -110,6 +115,58 @@ def mainloop(mw, app, handler):
 
     print(mw.log)
     ui.notify_disconnect()
+LIMIT_BYTE = 640
+
+
+
+class MainChat(QtWidgets.QMainWindow):
+    def __init__(self, iu):
+        super().__init__()
+
+        self._iu = iu
+        ui_file_path = Path(__file__).parent.absolute() / "mainchat.ui"
+        uic.loadUi(ui_file_path, self)
+
+        revs = ['igor', 'ivan', 'kolya', 'slava']
+        self.tableWidget.setColumnCount(1)
+        self.tableWidget.setRowCount(len(revs))
+        self.tableWidget.setSortingEnabled(True)
+        self.tableWidget.setHorizontalHeaderLabels(['Друзья'])
+        self.tableWidget.verticalHeader().setVisible(False)
+
+
+        for i, rev in enumerate(revs):
+            self.tableWidget.setItem(0, i, QTableWidgetItem(rev))
+
+        self.tableWidget.cellDoubleClicked.connect(self.take_item)
+
+
+    def take_item(self, row, column):
+        item = self.tableWidget.item(row, column)
+
+
+
+        print(item.text())
+
+        # for i, rev in enumerate(revs):
+        #     for j, item in enumerate(rev):
+        #         tblw.setItem(i, j, QTableWidgetItem( str(item) ))
+
+
+
+    def event(self, e):
+
+        if e.type() == QtCore.QEvent.Close:
+            print("Нажата клавиша на клавиатуре")
+
+        elif e.type() == QtCore.QEvent.Close:
+            print("Окно закрыто")
+        elif e.type() == QtCore.QEvent.MouseButtonPress:
+            print("Клик мышью. Координаты:", e.x(), e.y())
+
+
+        # Событие отправляется дальше
+        return super().event(e)
 
 
 if __name__ == "__main__":
@@ -120,14 +177,13 @@ if __name__ == "__main__":
     handler = EventHandler()
     iu = UiNotifier(app, handler)
 
-    mw = MainWindow(iu)
+    mw = MainChat(iu)
     mw.show()
 
-    thr = threading.Thread(target=mainloop, args=(mw, app, handler))
-    thr.start()
+
 
     app.exec_()
-    thr.join()
+
     # thr.join()
 
 
