@@ -28,6 +28,9 @@ class Serializer:
 
     def serializer_server_message(self, cl_data):
         client_msg = self.serializer_client(cl_data)
+        from_client = client_msg['from']
+        to_client = client_msg['to']
+
         msg = client_msg['message']
         if client_msg['action'] == 'msg':
             if client_msg['message'] == 'quit':
@@ -38,7 +41,7 @@ class Serializer:
                 return self.limit_byte(res)  # байты
             else:
 
-                data = {"response": 200, "alert": "Сообщение принято", "сообщение": msg , "action": "message"}
+                data = {"response": 200, "alert": "Сообщение принято", "сообщение": msg , "action": "message", 'from': from_client, 'to': to_client}
                 result_str = self._dumps(data)
                 res = result_str.encode(self.encoding)
 
