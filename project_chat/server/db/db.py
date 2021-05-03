@@ -1,5 +1,8 @@
+import hmac
 import sqlite3
 import re
+
+SECRET_KEY = b'HeiwrjJFEI54964fdsaKKFefkwpe'
 
 
 class UserModel:
@@ -49,6 +52,7 @@ class HistoryClient:
             print(f"create table if not exists {self.namemodel} ({self.str_atr});")
             cursor.execute(
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
+
 
 class ListClients:
     def __init__(self, url_base):
@@ -188,7 +192,6 @@ class ObjRelMap:
         except BaseException as e:
             print('Error: delete', e)
 
-
     def join(self, models, field=None, where=None):
         self.initialization()
 
@@ -235,6 +238,11 @@ class ObjRelMap:
         self.conn.close()
 
 
+def register_user(password):
+    hash = hmac.new(SECRET_KEY, bytes(password, encoding='utf-8'), digestmod='sha256')
+    digest = hash.hexdigest()
+    return digest
+
 if __name__ == '__main__':
     user = UserModel('company.db3')
     user.migrate()
@@ -243,46 +251,51 @@ if __name__ == '__main__':
     list_clients = ListClients('company.db3')
     list_clients.migrate()
 
-    name = 'igor'
-    password = '123'
-    list_data = {'username': 'kolya', 'password': '45321'}
+    # name = 'igor'
+    # password = '123'
+    #
 
     cliendb = ObjRelMap('company.db3')
+
+    password = '12345'
+    pass_hash = register_user(password)
+
+    list_data = {'username': 'igor2', 'password': pass_hash}
+
     cliendb.add('UserModel', list_data)
 
-    cliendb.select('UserModel', ['id', 'username', 'password'])
-
-    dict_get = {'username': 'ivanewe'}
-
-    field = ['id']
-
-
-    get = cliendb.get('UserModel', dict_get, field)
-    print(get[0], 'get_user')
-
-    update_set = {'is_active': 1}
-    cliendb.update('UserModel', dict_get, update_set)
-
-    history_add = {'username_id': 1, 'time_at': '2015-02-25 13:21:49', 'ip_addr': '127.0.0.1'}
-
-    f = cliendb.select('UserModel', ['id', 'username', 'password'])
-
-    cliendb.join([user, history], field=['UserModel.username'], where='UserModel.id=1')
-
-    join_db = cliendb.join([user, list_clients], field=['UserModel.username'], where='ListClients.username_id=1')
-
-    db_user_add = cliendb.get('UserModel', {'username': 'igor'}, ['id'])
-    user_add = cliendb.get('UserModel', {'username': 'egor'}, ['id'])
-
-    print(db_user_add)
-    print(user_add)
-
-    print(join_db)
-    for item in join_db:
-        print(item[0])
-
-    cliendb.delete('ListClients', {"username_id": 1, "client_id": 3})
-
-    join_db = cliendb.join([user, list_clients], field=['UserModel.username'],
-                                where=f'ListClients.username_id=2')
-    print(join_db)
+    # cliendb.select('UserModel', ['id', 'username', 'password'])
+    #
+    # dict_get = {'username': 'ivanewe'}
+    #
+    # field = ['id']
+    #
+    # get = cliendb.get('UserModel', dict_get, field)
+    # print(get[0], 'get_user')
+    #
+    # update_set = {'is_active': 1}
+    # cliendb.update('UserModel', dict_get, update_set)
+    #
+    # history_add = {'username_id': 1, 'time_at': '2015-02-25 13:21:49', 'ip_addr': '127.0.0.1'}
+    #
+    # f = cliendb.select('UserModel', ['id', 'username', 'password'])
+    #
+    # cliendb.join([user, history], field=['UserModel.username'], where='UserModel.id=1')
+    #
+    # join_db = cliendb.join([user, list_clients], field=['UserModel.username'], where='ListClients.username_id=1')
+    #
+    # db_user_add = cliendb.get('UserModel', {'username': 'igor'}, ['id'])
+    # user_add = cliendb.get('UserModel', {'username': 'egor'}, ['id'])
+    #
+    # print(db_user_add)
+    # print(user_add)
+    #
+    # print(join_db)
+    # for item in join_db:
+    #     print(item[0])
+    #
+    # cliendb.delete('ListClients', {"username_id": 1, "client_id": 3})
+    #
+    # join_db = cliendb.join([user, list_clients], field=['UserModel.username'],
+    #                        where=f'ListClients.username_id=2')
+    # print(join_db)

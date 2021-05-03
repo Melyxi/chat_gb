@@ -1,5 +1,15 @@
+import hmac
+
 from .message import Authenticate, Message
 
+
+
+SECRET_KEY = b'HeiwrjJFEI54964fdsaKKFefkwpe'
+
+def hashing_pass(SECRET_KEY, password):
+    hash = hmac.new(SECRET_KEY, bytes(password, encoding='utf-8'), digestmod='sha256')
+    digest = hash.hexdigest()
+    return digest
 
 class Client:
     def __init__(self, client_socket, account_name, serializer):
@@ -8,7 +18,10 @@ class Client:
         self._serializer = serializer
 
     def authenticate(self, password):
-        msg = Authenticate(self.account_name, password)
+
+        digest = hashing_pass(SECRET_KEY, password)
+
+        msg = Authenticate(self.account_name, digest)
         data = self._serializer.serialize_authenticate(msg)
         #print(data)
         self._client_socket.send(data)
