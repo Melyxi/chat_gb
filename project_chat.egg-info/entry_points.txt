@@ -1,0 +1,4 @@
+[console_script]
+start_client = project_chat.client:main
+start_server = project_chat.server:main
+

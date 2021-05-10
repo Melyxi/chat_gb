@@ -1,6 +1,7 @@
+import json
+
 from project_chat.client.message import Authenticate, Message
 from project_chat.client.serializer import Serializer
-import json
 
 LIMIT_BYTE = 640
 

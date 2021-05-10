@@ -1,6 +1,8 @@
-import pytest
-from project_chat.server.serializer import Serializer
 import json
+
+import pytest
+
+from project_chat.server.serializer import Serializer
 
 LIMIT_BYTE = 640
 def limit_byte(byte_str):

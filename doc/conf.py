@@ -12,6 +12,7 @@
 #
 import os
 import sys
+
 sys.path.insert(1, f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}\\project_chat')
 sys.path.append(f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}\\project_chat\\log')
 sys.path.append(f'{os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}')

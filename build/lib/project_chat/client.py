@@ -7,7 +7,7 @@ from pathlib import Path
 
 import PyQt5
 from PyQt5 import QtWidgets
-from project_chat.client.front.front_client import MainWindow
+from client.front.front_client import MainWindow
 
 
 def setup_plugin_path():

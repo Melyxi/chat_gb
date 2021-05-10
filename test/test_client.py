@@ -1,8 +1,10 @@
 from unittest.mock import MagicMock
 
+import pytest
+
 from project_chat.client.client import Client
 from project_chat.client.message import Authenticate, Message
-import pytest
+
 
 def test_authenticate():
     # class MyTestSocket:

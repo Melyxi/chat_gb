@@ -1,6 +1,5 @@
 import json
 import os
-
 from .decor_log_server import log_client, log_msg
 
 

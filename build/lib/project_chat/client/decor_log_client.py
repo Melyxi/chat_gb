@@ -1,9 +1,9 @@
 
-import inspect
-import json
 import logging
+import json
 from functools import wraps
 
+import inspect
 logger = logging.getLogger('client')
 
 def log_auth_client(func):

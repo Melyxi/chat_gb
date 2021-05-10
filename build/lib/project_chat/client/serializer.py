@@ -1,10 +1,8 @@
 import json
 import time
 
-from client.decor_log_client import (log_auth_client, log_msg_client,
-                                     log_server_code)
-
 from .message import Authenticate, Message
+from client.decor_log_client import log_auth_client, log_msg_client, log_server_code
 
 
 class Serializer:

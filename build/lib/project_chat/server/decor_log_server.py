@@ -1,9 +1,7 @@
-import inspect
+import server.server_log_config
 import logging
 from functools import wraps
-
-import server.server_log_config
-
+import inspect
 logger = logging.getLogger('server')
 
 

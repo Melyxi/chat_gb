@@ -2,6 +2,8 @@ import hmac
 
 from .message import Authenticate, Message
 
+
+
 SECRET_KEY = b'HeiwrjJFEI54964fdsaKKFefkwpe'
 
 def hashing_pass(SECRET_KEY, password):

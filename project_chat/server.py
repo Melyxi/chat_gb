@@ -1,26 +1,19 @@
 # server
-
-# Программа сервера времени
 import datetime
-from socket import *
-import time
-import click
-from contextlib import closing
-import json
-import os
-
-from project_chat.server.db.db import ObjRelMap
-from project_chat.server.serializer import Serializer
-from project_chat.server.server_socket import ServerSocket
-#from project_chat.server.server import Server
-import project_chat.server.server_log_config
-import selectors
-import errno
 import logging
-import socket
-from project_chat.server.server import FeedData
-logger = logging.getLogger('server')
+import os
 import select
+import socket
+import time
+from socket import *
+
+import click
+from server.db.db import ObjRelMap
+from server.serializer import Serializer
+from server.server import FeedData
+
+logger = logging.getLogger('server')
+
 
 LIMIT_BYTE = 640
 
@@ -120,7 +113,8 @@ class Server:
 @click.option('--a', default='', help='ip')
 @click.option('--p', default=7777, help='port')
 def main(a, p):
-    path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3') # бд
+    g = os.path.dirname(os.path.abspath(__file__))
+    path = g + '\\server\\db\\company.db3'
     server = Server(a, p, path)
     server.init_sock()
 
@@ -135,7 +129,7 @@ def main(a, p):
             logger.debug(f"Клиент подключился")
 
 
-            path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3')
+
             time_at = datetime.datetime.utcfromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
             list_data = {'username_id': 1, 'ip_addr': str(addr), 'time_at': time_at}
             cliendb = ObjRelMap(path)

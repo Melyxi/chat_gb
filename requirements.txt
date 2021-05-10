@@ -1,0 +1,10 @@
+asttokens==2.0.5
+click==7.1.2
+colorama==0.4.4
+executing==0.6.0
+icecream==2.1.0
+Pygments==2.9.0
+PyQt5==5.15.4
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.8.1
+six==1.16.0

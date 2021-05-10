@@ -1,6 +1,6 @@
 import hmac
-import sqlite3
 import re
+import sqlite3
 
 SECRET_KEY = b'HeiwrjJFEI54964fdsaKKFefkwpe'
 
@@ -23,7 +23,6 @@ class UserModel:
 
     def migrate(self):
         with sqlite3.connect(self.url_base) as conn:
-            print(f"create table if not exists {self.namemodel} ({self.str_atr});")
             cursor = conn.cursor()
             cursor.execute(
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
@@ -49,7 +48,6 @@ class HistoryClient:
     def migrate(self):
         with sqlite3.connect(self.url_base) as conn:
             cursor = conn.cursor()
-            print(f"create table if not exists {self.namemodel} ({self.str_atr});")
             cursor.execute(
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
 
@@ -74,7 +72,7 @@ class ListClients:
     def migrate(self):
         with sqlite3.connect(self.url_base) as conn:
             cursor = conn.cursor()
-            print(f"create table if not exists {self.namemodel} ({self.str_atr});")
+
             cursor.execute(
                 f"create table if not exists {self.namemodel} ({self.str_atr});")
 
@@ -198,7 +196,6 @@ class ObjRelMap:
         for obj in models:
 
             string = getattr(obj, 'foreign_key', False)
-            print(string)
             if string:
 
                 pattern = r'\((.+?)\)'
@@ -208,12 +205,11 @@ class ObjRelMap:
 
                 key_id = key_id.group(1)
                 key_ref = key_ref.group(1)
-                print(key_id)
-                print(key_ref)
+
                 model_key = obj.namemodel
             else:
                 model_ref = obj.namemodel
-                print(model_ref)
+
 
         if field != None:
             key_join = ', '.join(field)

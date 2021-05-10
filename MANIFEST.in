@@ -1,0 +1,2 @@
+graft project_chat
+global-exclude *.pyc

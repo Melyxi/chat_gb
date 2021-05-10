@@ -1,10 +1,9 @@
 import hmac
-import json
+from .decor_log_server import log_msg, log_auth
 import selectors
-
-from .db.db import HistoryClient, ListClients, ObjRelMap, UserModel
-from .decor_log_server import log_auth, log_msg
 from .serializer import Serializer
+import json
+from .db.db import ObjRelMap, HistoryClient, ListClients, UserModel
 
 """
 class Server:
@@ -30,7 +29,6 @@ class Server:
 
 
 import os
-
 
 class ClientStorage:
 

@@ -1,19 +1,23 @@
-import os
 import sys
 import threading
 import time
 from pathlib import Path
 from socket import *
 
+from PyQt5.QtCore import Qt
+from icecream import ic
+
+from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from PyQt5.QtWidgets import QApplication, QMainWindow, QGridLayout, QWidget, QTableWidget, QTableWidgetItem, QLineEdit
+import os
+from pathlib import Path
+
 import PyQt5
+
+
 from client.client import Client
 from client.client_socket import ClientSocket
 from client.serializer import Serializer
-from icecream import ic
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QGridLayout, QLineEdit, QMainWindow,
-                             QTableWidget, QTableWidgetItem, QWidget)
 
 LIMIT_BYTE = 640
 

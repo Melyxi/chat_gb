@@ -1,9 +1,9 @@
 # from logging.handlers import TimedRotatingFileHandler
 import logging as logging
-# add filemode="w" to overwrite
-import os
 import sys
 from logging.handlers import TimedRotatingFileHandler
+# add filemode="w" to overwrite
+import os
 
 logger = logging.getLogger("server")
 

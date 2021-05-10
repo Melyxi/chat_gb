@@ -2,7 +2,6 @@ import logging
 import os
 import sys
 from logging.handlers import TimedRotatingFileHandler
-
 # add filemode="w" to overwrite
 
 logger = logging.getLogger("client")
