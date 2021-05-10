@@ -31,14 +31,12 @@ class Port:
     Класс-дескриптор для порта. Проверяет, входит ли адрес в допустимый диапазон (с 1024 до 65535).
     """
     def __set__(self, instance, value):
-        #print("__set__")
         if not (1023 < value < 65535):
             logger.critical(f'Допустимы адреса с 1024 до 65535. Передан {value}')
             raise TypeError('Некорректрый номер порта')
         instance.__dict__[self.name] = value
 
     def __set_name__(self, owner, name):
-        #print('name')
         self.name = name
 
 
@@ -68,7 +66,6 @@ class Server:
         return self.sock.accept()
 
     def disconnect_client(self, sock, all_clients):
-        print(f"Клиент‚ {sock.fileno()} {sock.getpeername()} отключился")
         sock.close()
         all_clients.remove(sock)
 
@@ -78,7 +75,6 @@ class Server:
         for sock in r_clients:
             try:
                 data = sock.recv(640)
-                print(data)
 
                 feed_data = FeedData(data, self.db_url)
                 byte_str = feed_data.analysis_data()
@@ -111,13 +107,11 @@ class Server:
                     try:
                         if recv['action'] == 'message':
                             sock.send(data)
-                        print(json.loads(data.decode("utf-8")))
                     except:
                         self.disconnect_client(sock, all_clients)
             else:
                 if sock in requests:
                     data = requests[sock]
-                    # print('noaut')
                     sock.send(data)
 
 
@@ -127,7 +121,6 @@ class Server:
 @click.option('--p', default=7777, help='port')
 def main(a, p):
     path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3') # бд
-    print(a, p)
     server = Server(a, p, path)
     server.init_sock()
 
@@ -140,9 +133,7 @@ def main(a, p):
             pass
         else:
             logger.debug(f"Клиент подключился")
-            print(f"Клиент подключился‚ {addr}")
 
-            print(addr)
 
             path = os.path.join(os.getcwd(), 'project_chat/server/db/company.db3')
             time_at = datetime.datetime.utcfromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')

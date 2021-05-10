@@ -1,1 +1,5 @@
 /log
+/doc/_build
+make.bat
+Makefile
+/venv

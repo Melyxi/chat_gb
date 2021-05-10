@@ -90,7 +90,6 @@ class Serializer:
         return self.limit_byte(res)  # байты
 
     def serializer_server_get_client_correctly(self, list_client):
-        print(list_client)
         clients = []
         for item in list_client:
             clients.append(item[0])

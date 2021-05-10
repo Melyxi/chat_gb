@@ -1,4 +1,4 @@
-import project_chat.client.client_log_config
+
 import logging
 import json
 from functools import wraps

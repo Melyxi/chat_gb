@@ -1,30 +1,12 @@
 import click
 from socket import *
-import datetime, time
-import json
-
-from PyQt5.QtCore import Qt
-from psutil._common import addr
-
-from project_chat.client.client_socket import ClientSocket
-from project_chat.client.serializer import Serializer
-from project_chat.client.client import Client
-import project_chat.client.client_log_config
-import logging
-import threading
-
-logger = logging.getLogger('client')
-
 import os
 import sys
-import threading
+
 from pathlib import Path
 
 import PyQt5
-from PyQt5.QtWidgets import QLineEdit, QTableWidgetItem
-from icecream import ic
-from PyQt5 import QtWidgets, uic
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtWidgets
 from project_chat.client.front.front_client import MainWindow
 
 
@@ -33,11 +15,22 @@ def setup_plugin_path():
     os.environ["QT_PLUGIN_PATH"] = str(plugins_path)
 
 
-if __name__ == '__main__':
+@click.command()
+@click.option('--add', default='localhost', help='ip')
+@click.option('--port', default=7777, help='port')
+def main(add, port):
+    s = socket(AF_INET, SOCK_STREAM)
+    s.connect((add, port))
+
     setup_plugin_path()
     app = QtWidgets.QApplication(sys.argv)
 
-    mw = MainWindow()
+    mw = MainWindow(s)
     mw.show()
 
     app.exec_()
+
+
+
+if __name__ == '__main__':
+    main()

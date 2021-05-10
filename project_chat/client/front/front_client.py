@@ -52,7 +52,7 @@ class DialogWindow(QtWidgets.QMainWindow):
 
     def on_text_msg(self):
         self.msg = self.textmsg.toPlainText()
-        print(self.msg)
+
 
     def push_msg(self):
         account_name = self._client.account_name
@@ -61,7 +61,6 @@ class DialogWindow(QtWidgets.QMainWindow):
         self.chat.setTextColor(Qt.blue)
         self.chat.append(f'{account_name}: {msg}')
 
-        print(type(self.msg), 'send')
         to_user = self._to_client
         self._client.message(msg=msg, to_user=to_user)  # вводим сообщение
         self.textmsg.clear()
@@ -82,6 +81,12 @@ class DialogWindow(QtWidgets.QMainWindow):
 
 
 class MainChat(QtWidgets.QMainWindow):
+    """
+    :Class: main chat window
+    :param client: type: Class: authorized client
+    :param dlg: type: dict: dict dialog client
+    """
+
     dlg = {}
 
     def __init__(self, client):
@@ -121,12 +126,10 @@ class MainChat(QtWidgets.QMainWindow):
 
     def text_add_client(self):
         self.addEdit_client = self.addEdit.text()
-        print(self.addEdit_client)
         self.addEdit.text()
 
     def text_del_client(self):
         self.delEdit_client = self.deleteEdit.text()
-        print(self.delEdit_client)
         self.deleteEdit.text()
 
     def get(self):
@@ -135,7 +138,6 @@ class MainChat(QtWidgets.QMainWindow):
         dict_server = Serializer().serializer_code(FeeData.dict_ser)
 
         if 'alert' in dict_server and 'action' in dict_server and dict_server['action'] == 'get_clients':
-            print(dict_server, 'get_contact')
             self.show_client(dict_server['alert'])
 
     def show_client(self, client_list):
@@ -154,16 +156,19 @@ class MainChat(QtWidgets.QMainWindow):
 
         self.dlg[from_user] = dialog
         self.print_dlg(from_user)
-        print(self.dlg)
+
 
     def print_dlg(self, from_user):
         self.dlg[from_user].show()
 
 
 class MainWindow(QtWidgets.QMainWindow):
-    # dict_server = []
+    """
+    Class: login form chat
+    :param sock: client socket
+    """
 
-    def __init__(self):
+    def __init__(self, sock):
         super().__init__()
 
         ui_file_path = Path(__file__).parent.absolute() / "client.ui"
@@ -171,7 +176,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.log = None
         self.pas = None
         self.dict_data = None
-        self.flag_btn = False
         self.pushLogin.clicked.connect(self.push_data)
 
         self.Password.setEchoMode(QLineEdit.Password)
@@ -179,21 +183,16 @@ class MainWindow(QtWidgets.QMainWindow):
         self.Login.textChanged.connect(self.on_text_login)
         self.Password.textChanged.connect(self.on_text_password)
 
-        self.client_sock = None
-        # self._client = None
-        self.io = None
-
-        self.s = None
-        self.connection()
+        self.s = sock
+        self.client_sock = ClientSocket(self.s)
+        self.io = IoLoop(self.s)
 
     def on_text_login(self):
         self.log = self.Login.text()
-        print(self.log)
         self.Login.text()
 
     def on_text_password(self):
         self.pas = self.Password.text()
-        print(self.pas)
         self.Password.text()
 
     def push_data(self):
@@ -207,13 +206,10 @@ class MainWindow(QtWidgets.QMainWindow):
         time.sleep(0.5)
         code = Serializer().serializer_code_authenticate(FeeData.dict_ser)
 
-        print(code)
-
-        print(200, 'code')
         if code == 200:
             # self.dialog = DialogWindow(client)
             self.MainChat = MainChat(self._client)
-            print('Вошли')
+
             self.statusBar().showMessage('Вошли')
             self.statusBar().setGeometry(200, 80, 400, 20)
             self.MainChat.show()
@@ -221,32 +217,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
         elif code == 402:
-            print("Неверный пароль или логин")
             self.statusBar().showMessage('Неверный пароль или логин')
             self.statusBar().setGeometry(150, 80, 400, 20)
-
-    def event(self, e):
-
-        if e.type() == QtCore.QEvent.Close:
-            print("Нажата клавиша на клавиатуре")
-
-        elif e.type() == QtCore.QEvent.Close:
-            print("Окно закрыто")
-        elif e.type() == QtCore.QEvent.MouseButtonPress:
-            print("Клик мышью. Координаты:", e.x(), e.y())
-
-        # Событие отправляется дальше
-        return super().event(e)
-
-    def connection(self):
-        self.s = socket(AF_INET, SOCK_STREAM)
-        self.s.connect(('127.0.0.1', 7777))
-        # s.connect((add, port))
-
-        self.client_sock = ClientSocket(self.s)
-        self.io = IoLoop(self.s)
-        print(self.io.dict_server)
-        # self.io = IoLoop(self.client_sock)
 
 
 class FeeData:
@@ -273,9 +245,7 @@ class IoLoop:
         while True:
             data = s.recv(LIMIT_BYTE)
             FeeData.dict_ser = data
-
             self.dict_server = Serializer().serializer_code(data)
 
-            print(f"Сообщение от сервера: {self.dict_server} длиной {len(data)} байт", '++++++')
 
 

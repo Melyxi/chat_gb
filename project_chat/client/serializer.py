@@ -55,7 +55,6 @@ class Serializer:
 
     @log_auth_client
     def serializer_code_authenticate(self, byte_string):  # код аунтификации
-        # print(self.serializer_code)
         return self.serializer_code(byte_string)['response']
 
     def serializer_get_contacts(self, username):
@@ -64,7 +63,6 @@ class Serializer:
             "time": self._get_time_fn(),
             "user_id": username
         }
-        print(result_dict)
         result_str = self._dumps(result_dict)
         res = result_str.encode(self._encoding)
 

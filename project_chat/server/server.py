@@ -1,3 +1,5 @@
+import hmac
+
 from .decor_log_server import log_msg, log_auth
 import selectors
 from .serializer import Serializer
@@ -65,7 +67,6 @@ class ClientStorage:
     def get_client(self):
 
         try:
-            print('get_contacts')
             field = ['id']
             username = self.data['user_id']
             db_user = self.cliendb.get('UserModel', {'username': username}, field)
@@ -75,8 +76,6 @@ class ClientStorage:
 
             return join_db  # байты
         except BaseException as e:
-
-            print('Error ', e)
             return False
 
     def del_contact(self):
@@ -98,14 +97,15 @@ class ClientStorage:
     def auth_client(self):
 
         try:
-            field = ['id']
+            field = ['id', 'password']
 
             username = self.data['user']['account_name']
             password = self.data['user']['password']
-            auth_code = self.cliendb.get('UserModel', {'username': username, 'password': password}, field)
 
-            if auth_code:
+            auth_code = self.cliendb.get('UserModel', {'username': username}, field)
+            true_auth = hmac.compare_digest(password, auth_code[1])
 
+            if true_auth:
                 update_set = {'is_active': 1}
                 self.cliendb.update('UserModel', {"username": username}, update_set)
 

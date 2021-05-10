@@ -266,12 +266,12 @@ if __name__ == '__main__':
 
     # cliendb.select('UserModel', ['id', 'username', 'password'])
     #
-    # dict_get = {'username': 'ivanewe'}
+    dict_get = {'username': 'igor2'}
     #
-    # field = ['id']
+    field = ['id', 'password']
     #
-    # get = cliendb.get('UserModel', dict_get, field)
-    # print(get[0], 'get_user')
+    get = cliendb.get('UserModel', dict_get, field)
+    print(get, 'get_user')
     #
     # update_set = {'is_active': 1}
     # cliendb.update('UserModel', dict_get, update_set)
